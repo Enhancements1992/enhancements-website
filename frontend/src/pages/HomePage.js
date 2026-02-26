@@ -191,7 +191,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <img 
-              src="https://images.pexels.com/photos/3552894/pexels-photo-3552894.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+              src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/251saidg_3402_mineral-silk-lifestyle-2.jpg" 
               alt="Ingrid Cosmetics"
               className="brand-card-image"
             />

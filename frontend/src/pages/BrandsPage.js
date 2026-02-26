@@ -320,12 +320,51 @@ export default function BrandsPage() {
               transition={{ duration: 0.8 }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80"
+                src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/0ad4ayzh_3266_5902026632621-5902026632638-5902026632652-5902026632645-5902026661584-1.jpg"
                 alt="Ingrid Cosmetics"
                 className="img-zoom w-full h-full object-cover"
               />
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Ingrid Gallery Section */}
+      <section className="py-16 bg-[#F9F9F9]" data-testid="ingrid-gallery">
+        <div className="container-luxury">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+          >
+            <motion.div 
+              className="grid grid-cols-1 md:grid-cols-3 gap-4"
+              variants={fadeInUp}
+            >
+              <div className="img-zoom-container aspect-square overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/251saidg_3402_mineral-silk-lifestyle-2.jpg"
+                  alt="Ingrid Mineral Silk Foundation"
+                  className="img-zoom w-full h-full object-cover"
+                />
+              </div>
+              <div className="img-zoom-container aspect-square overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/kguw9536_3368_5902026663458-lel-fixation-2.jpg"
+                  alt="Ingrid Eyebrow Fixation"
+                  className="img-zoom w-full h-full object-cover"
+                />
+              </div>
+              <div className="img-zoom-container aspect-square overflow-hidden">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/0ad4ayzh_3266_5902026632621-5902026632638-5902026632652-5902026632645-5902026661584-1.jpg"
+                  alt="Ingrid Ideal Matt Foundation"
+                  className="img-zoom w-full h-full object-cover"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 

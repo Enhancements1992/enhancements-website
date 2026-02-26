@@ -1,0 +1,175 @@
+{
+  "identity": {
+    "name": "E1 - The Anti-AI Designer",
+    "tone": "Quiet Luxury",
+    "mission": "Create a conversion-focused, minimalist, and ultra-premium B2B portal for Enhancements srl.",
+    "core_principles": [
+      "Fusion over Imitation: Mix Editorial Fashion layouts with Swiss precision.",
+      "Emotion First: Evoke trust, exclusivity, and professionalism.",
+      "Content is King: The products and brands are the heroes. The UI is the frame.",
+      "Zoom In: Use macro textures to sell the 'feeling' of the cosmetics.",
+      "Negative Space: Massive padding to signal luxury."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "weights": ["400", "600"],
+      "usage": "Main headlines, section titles. Use italics for emphasis words.",
+      "letter_spacing": "tracking-tight"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Paragraphs, UI elements, navigation.",
+      "letter_spacing": "tracking-wide"
+    },
+    "labels": {
+      "font_family": "Manrope, sans-serif",
+      "weight": "600",
+      "transform": "uppercase",
+      "letter_spacing": "tracking-[0.2em]",
+      "usage": "Buttons, nav links, small tags."
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#FFFFFF",
+      "foreground": "#0A0A0A",
+      "primary": "#0A0A0A",
+      "secondary": "#F9F9F9",
+      "accent": "#C5A059",
+      "accent_soft": "#F4EBD9",
+      "muted": "#888888",
+      "border": "#E5E5E5",
+      "error": "#D32F2F"
+    },
+    "gradients": {
+      "gold_sheen": "linear-gradient(135deg, #C5A059 0%, #E6C88B 50%, #C5A059 100%)",
+      "fade_overlay": "linear-gradient(to top, rgba(0,0,0,0.4), transparent)"
+    },
+    "usage_rules": [
+      "Backgrounds must be predominantly White (#FFFFFF) or very soft light gray (#F9F9F9).",
+      "Text must be Soft Black (#0A0A0A) or Dark Grey (#333333). NEVER pure black on white.",
+      "Gold (#C5A059) is for 1px borders, active states, and fine details only. DO NOT use gold backgrounds.",
+      "Borders should be extremely subtle (#E5E5E5)."
+    ]
+  },
+  "layout_strategy": {
+    "container": {
+      "max_width": "max-w-screen-2xl",
+      "padding": "px-6 md:px-12 lg:px-24",
+      "alignment": "center"
+    },
+    "spacing": {
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grid_system": {
+      "bento_brands": "grid grid-cols-1 md:grid-cols-2 gap-0",
+      "bento_features": "grid grid-cols-1 md:grid-cols-3 gap-px bg-border border border-border"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white rounded-none px-8 py-4 uppercase tracking-[0.15em] text-xs font-semibold hover:bg-accent transition-colors duration-300",
+      "secondary": "bg-transparent border border-primary text-primary rounded-none px-8 py-4 uppercase tracking-[0.15em] text-xs font-semibold hover:bg-primary hover:text-white transition-colors duration-300",
+      "text_link": "text-primary underline decoration-1 underline-offset-4 hover:decoration-accent transition-all uppercase tracking-widest text-[10px]"
+    },
+    "cards": {
+      "feature": "bg-white p-12 flex flex-col items-start gap-4 hover:bg-neutral-50 transition-colors duration-500",
+      "brand": "relative h-[60vh] md:h-[80vh] w-full overflow-hidden group"
+    },
+    "inputs": {
+      "style": "bg-transparent border-b border-border px-0 py-4 focus:border-black focus:ring-0 rounded-none placeholder:text-neutral-400 transition-all text-lg font-light"
+    },
+    "navigation": {
+      "header": "fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-black/5 h-20 flex items-center justify-between px-6 md:px-12",
+      "link": "text-sm uppercase tracking-widest hover:text-accent transition-colors"
+    }
+  },
+  "visual_enhancers": {
+    "motion": {
+      "reveal": "initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} viewport={{ once: true }}",
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-300"
+    },
+    "textures": {
+      "noise": "url('/noise.png') opacity-5"
+    }
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.pexels.com/photos/33989223/pexels-photo-33989223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Elegant model with golden makeup detail",
+      "position": "center center",
+      "overlay": "bg-black/10"
+    },
+    "textures": {
+      "gold_powder": "https://images.unsplash.com/photo-1759392059291-905bbcd9bb98?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "water_droplets": "https://images.unsplash.com/photo-1765859904394-73fd39f97c41?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "brands": {
+      "trind_context": "https://images.unsplash.com/photo-1747961959189-497e523c5c52?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "ingrid_context": "https://images.unsplash.com/photo-1730385781652-ad7498ad2984?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "company": {
+      "warehouse": "https://images.unsplash.com/photo-1771531072574-af6ed6b954c0?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "logistics": "https://images.pexels.com/photos/4487363/pexels-photo-4487363.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  },
+  "page_structure": {
+    "homepage": [
+      {
+        "section": "Hero",
+        "type": "Full Screen Image",
+        "content": "Headline: 'Excellence in Cosmetic Distribution'. Sub: 'Enhancements srl brings the world's finest beauty brands to Italy.' CTA: 'Discover Portfolio'"
+      },
+      {
+        "section": "Intro",
+        "type": "Text + Minimal Image",
+        "content": "Mission statement. 'Professionalism, Reliability, Efficiency'."
+      },
+      {
+        "section": "Brands Showcase",
+        "type": "Split Screen (Trind / Ingrid)",
+        "content": "Visual balance. Hover effects to reveal brand logos/descriptions."
+      },
+      {
+        "section": "Services",
+        "type": "Bento Grid",
+        "content": "Logistics, Sales Support, Training, Marketing."
+      },
+      {
+        "section": "Contact CTA",
+        "type": "Minimal Banner",
+        "content": "Simple 'Partner with Us' button."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install 'lenis' for smooth scrolling.",
+    "Use 'framer-motion' for all reveal animations.",
+    "Do NOT use standard Shadcn Cards. Use the custom 'feature' card style defined above.",
+    "Ensure the 'Trind' and 'Ingrid' logos are prominent in the Brand Showcase section.",
+    "The Contact Form must be clean, with no background on inputs (border-bottom only).",
+    "Footer must be massive (py-24) with a large typography logo."
+  ],
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts"
+  ]
+}

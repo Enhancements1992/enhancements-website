@@ -43,7 +43,7 @@ export default function ContactPage() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('https://formspree.io/f/xwpopnpk', {
+      const response = await fetch('https://formspree.io/f/xkovegre', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

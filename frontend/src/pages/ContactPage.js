@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { MapPin, Phone, Clock, Mail, ExternalLink, CheckCircle, AlertCircle } from 'lucide-react';
-import axios from 'axios';
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -47,17 +43,42 @@ export default function ContactPage() {
     setSubmitStatus(null);
 
     try {
-      await axios.post(`${API}/contact`, {
-        ...formData,
-        language
+      const response = await fetch('https://formspree.io/f/xwpopnpk', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          phone: formData.phone,
+          message: formData.message,
+          language: language,
+          _subject: `Nuovo messaggio da ${formData.name} - Enhancements.eu`
+        })
       });
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        message: '',
+      
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          message: '',
+          privacy_accepted: false
+        });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Contact form error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
         privacy_accepted: false
       });
     } catch (error) {

@@ -79,15 +79,6 @@ export default function ContactPage() {
       setIsSubmitting(false);
     }
   };
-        privacy_accepted: false
-      });
-    } catch (error) {
-      console.error('Contact form error:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   const googleMapsUrl = 'https://www.google.com/maps/search/?api=1&query=Via+degli+Olmetti+5B+00060+Formello+RM+Italy';
 

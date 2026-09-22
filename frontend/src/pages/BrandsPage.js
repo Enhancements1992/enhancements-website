@@ -132,7 +132,7 @@ export default function BrandsPage() {
 
               <motion.div variants={fadeInUp}>
                 <a 
-                  href="https://www.trinditalia.it" 
+                  href="https://trind.it" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-secondary inline-flex items-center gap-2"

@@ -8,8 +8,10 @@ const translations = {
       about: 'Chi Siamo',
       brands: 'Brand',
       kbeauty: 'K-Beauty',
+      blog: 'Blog',
       services: 'Servizi',
-      contact: 'Contatti'
+      contact: 'Contatti',
+      pricelist: 'Richiedi listino B2B'
     },
     // Hero
     hero: {
@@ -198,8 +200,10 @@ const translations = {
       about: 'About Us',
       brands: 'Brands',
       kbeauty: 'K-Beauty',
+      blog: 'Blog',
       services: 'Services',
-      contact: 'Contact'
+      contact: 'Contact',
+      pricelist: 'Request B2B price list'
     },
     // Hero
     hero: {

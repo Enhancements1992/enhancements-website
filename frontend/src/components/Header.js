@@ -28,6 +28,7 @@ export const Header = () => {
     { path: '/brands', label: t('nav.brands') },
     { path: '/cosmetici-coreani', label: t('nav.kbeauty') },
     { path: '/services', label: t('nav.services') },
+    { path: '/blog', label: t('nav.blog') },
     { path: '/contact', label: t('nav.contact') }
   ];
 
@@ -56,7 +57,7 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-10" data-testid="desktop-nav">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8 whitespace-nowrap" data-testid="desktop-nav">
             {navLinks.map((link) => (
               <Link
                 key={link.path}

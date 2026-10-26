@@ -12,7 +12,9 @@ export const Footer = () => {
     { path: '/brands', label: t('nav.brands') },
     { path: '/cosmetici-coreani', label: t('nav.kbeauty') },
     { path: '/services', label: t('nav.services') },
-    { path: '/contact', label: t('nav.contact') }
+    { path: '/blog', label: t('nav.blog') },
+    { path: '/contact', label: t('nav.contact') },
+    { path: '/richiesta-listino', label: t('nav.pricelist') }
   ];
 
   return (

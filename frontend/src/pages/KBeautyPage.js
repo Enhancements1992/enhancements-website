@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Check, ArrowRight, Mail, Plus } from 'lucide-react';
+import { Check, ArrowRight, Plus, FileText, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useSeo } from '../hooks/useSeo';
 import { kbeautyContent, KBEAUTY_IMAGES } from '../content/kbeautyContent';
+import { whatsappUrl } from '../content/priceListContent';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -87,12 +88,12 @@ const FaqItem = ({ item, index }) => (
 
 const CtaButtons = ({ c, prefix }) => (
   <div className="flex flex-wrap gap-4">
-    <a href={mailto(c.mailSubject)} className="btn-primary inline-flex items-center gap-2" data-testid={`${prefix}-email-cta`}>
-      <Mail size={16} /> {c.ctaEmail}
-    </a>
-    <Link to="/contact" className="btn-secondary inline-flex items-center gap-2" data-testid={`${prefix}-form-cta`}>
-      {c.ctaForm} <ArrowRight size={16} />
+    <Link to="/richiesta-listino" className="btn-primary inline-flex items-center gap-2" data-testid={`${prefix}-pricelist-cta`}>
+      <FileText size={16} /> {c.ctaEmail}
     </Link>
+    <a href={whatsappUrl(c.waText)} target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center gap-2" data-testid={`${prefix}-whatsapp-cta`}>
+      <MessageCircle size={16} /> {c.ctaForm}
+    </a>
   </div>
 );
 
@@ -171,12 +172,12 @@ export default function KBeautyPage() {
       </section>
 
       <section className="section-spacing" data-testid="kb-faq">
-        <motion.div className="container-luxury max-w-3xl" {...reveal}>
+        <motion.div className="container-luxury" {...reveal}><div className="max-w-3xl">
           <SectionHead title={c.faqTitle} />
           <motion.div variants={fadeInUp}>
             {c.faq.map((f, i) => <FaqItem key={f.q} item={f} index={i} />)}
           </motion.div>
-        </motion.div>
+        </div></motion.div>
       </section>
 
       <section className="section-spacing bg-[#F4EBD9]">

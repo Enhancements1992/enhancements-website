@@ -70,7 +70,7 @@ export default function HomePage() {
             </Link>
             <Link 
               to="/contact" 
-              className="btn-secondary border-white text-white hover:bg-white hover:text-black"
+              className="btn-secondary !border-white !text-white hover:!bg-white hover:!text-black"
               data-testid="hero-cta-secondary"
             >
               {t('hero.ctaSecondary')}
@@ -174,7 +174,7 @@ export default function HomePage() {
               </p>
               <Link 
                 to="/brands" 
-                className="btn-secondary border-white text-white hover:bg-white hover:text-black text-xs"
+                className="btn-secondary !border-white !text-white hover:!bg-white hover:!text-black text-xs"
                 data-testid="brand-trind-cta"
               >
                 {t('brands.cta')} <ArrowRight size={14} className="inline ml-2" />
@@ -182,7 +182,7 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-          {/* Ingrid Card */}
+          {/* K-Beauty Card */}
           <motion.div 
             className="brand-card"
             initial={{ opacity: 0 }}
@@ -191,28 +191,23 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <img 
-              src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/251saidg_3402_mineral-silk-lifestyle-2.jpg" 
-              alt="Ingrid Cosmetics"
+              src="/images/kbeauty/missha.jpg" 
+              alt="K-Beauty - Korean Cosmetics"
               className="brand-card-image"
             />
             <div className="brand-card-overlay" />
             <div className="brand-card-content text-white">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/w4c2hk0c_ingrid-cosmetics.png"
-                alt="Ingrid Logo"
-                className="h-12 md:h-16 mb-4 object-contain"
-                style={{ filter: 'brightness(0) invert(1)' }}
-              />
+              <span className="label-style text-gold mb-4">Korean Beauty</span>
               <h3 className="font-heading text-3xl md:text-4xl mb-2">
-                {t('brands.ingrid.name')}
+                {t('brands.kbeauty.name')}
               </h3>
               <p className="text-gray-200 text-center max-w-sm mb-6">
-                {t('brands.ingrid.description')}
+                {t('brands.kbeauty.description')}
               </p>
               <Link 
                 to="/brands" 
-                className="btn-secondary border-white text-white hover:bg-white hover:text-black text-xs"
-                data-testid="brand-ingrid-cta"
+                className="btn-secondary !border-white !text-white hover:!bg-white hover:!text-black text-xs"
+                data-testid="brand-kbeauty-cta"
               >
                 {t('brands.cta')} <ArrowRight size={14} className="inline ml-2" />
               </Link>

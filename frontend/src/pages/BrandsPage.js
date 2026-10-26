@@ -17,6 +17,19 @@ const staggerContainer = {
   }
 };
 
+const KBEAUTY_PRODUCTS = {
+  'Anua': { img: 'anua.jpg', product: 'Heartleaf 77% Soothing Toner' },
+  'Beauty of Joseon': { img: 'boj.jpg', product: 'Relief Sun: Rice + Niacinamide SPF50+' },
+  'COSRX': { img: 'cosrx.jpg', product: 'Advanced Snail 96 Mucin Power Essence' },
+  'Innisfree': { img: 'innisfree.jpg', product: 'Green Tea Seed Hyaluronic Serum' },
+  'Missha': { img: 'missha.jpg', product: 'Time Revolution Night Repair Ampoule' },
+  'Some By Mi': { img: 'somebymi.jpg', product: 'AHA BHA PHA 30 Days Miracle Toner' },
+  'Skin1004': { img: 'skin1004.jpg', product: 'Madagascar Centella Ampoule' },
+  'Round Lab': { img: 'roundlab.jpg', product: '1025 Dokdo Water Gel Mask' }
+};
+
+const mailto = (subject) => `mailto:info@enhancements.eu?subject=${encodeURIComponent(subject)}`;
+
 export default function BrandsPage() {
   const { t, language } = useLanguage();
 
@@ -227,8 +240,8 @@ export default function BrandsPage() {
       {/* Divider */}
       <div className="separator-gold" />
 
-      {/* Ingrid Section */}
-      <section className="section-spacing" data-testid="ingrid-section">
+      {/* K-Beauty Section */}
+      <section className="section-spacing" data-testid="kbeauty-section">
         <div className="container-luxury">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -238,76 +251,33 @@ export default function BrandsPage() {
               viewport={{ once: true }}
               variants={staggerContainer}
             >
-              <motion.div 
-                className="mb-6"
-                variants={fadeInUp}
-              >
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/w4c2hk0c_ingrid-cosmetics.png"
-                  alt="Ingrid Logo"
-                  className="h-12 object-contain"
-                />
-              </motion.div>
-              
-              <motion.span 
-                className="label-style text-gold mb-2 block"
-                variants={fadeInUp}
-              >
-                {t('brandsPage.ingrid.subtitle')}
+              <motion.span className="label-style text-gold mb-2 block" variants={fadeInUp}>
+                {t('brandsPage.kbeauty.subtitle')}
               </motion.span>
-              
-              <motion.h2 
-                className="font-heading text-3xl sm:text-4xl mb-6"
-                variants={fadeInUp}
-              >
-                {t('brandsPage.ingrid.title')}
+              <motion.h2 className="font-heading text-3xl sm:text-4xl mb-6" variants={fadeInUp} data-testid="kbeauty-title">
+                {t('brandsPage.kbeauty.title')}
               </motion.h2>
-              
-              <motion.p 
-                className="text-gray-600 leading-relaxed mb-4"
-                variants={fadeInUp}
-              >
-                {t('brandsPage.ingrid.description')}
+              <motion.p className="text-gray-600 leading-relaxed mb-4" variants={fadeInUp}>
+                {t('brandsPage.kbeauty.description')}
               </motion.p>
-
-              <motion.p 
-                className="text-gray-600 leading-relaxed mb-6"
-                variants={fadeInUp}
-              >
-                {t('brandsPage.ingrid.longDescription')}
+              <motion.p className="text-gray-600 leading-relaxed mb-8" variants={fadeInUp}>
+                {t('brandsPage.kbeauty.longDescription')}
               </motion.p>
-
-              {/* Certifications */}
-              <motion.div 
-                className="flex flex-wrap gap-3 mb-6"
-                variants={fadeInUp}
-              >
-                {t('brandsPage.ingrid.certifications').map((cert, index) => (
-                  <span key={index} className="px-3 py-1 bg-[#F4EBD9] text-[#0A0A0A] text-xs font-semibold uppercase tracking-wider">
-                    {cert}
-                  </span>
-                ))}
-              </motion.div>
-
-              <motion.ul 
-                className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8"
-                variants={fadeInUp}
-              >
-                {t('brandsPage.ingrid.features').map((feature, index) => (
+              <motion.ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8" variants={fadeInUp}>
+                {t('brandsPage.kbeauty.features').map((feature, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <Check size={18} className="text-gold flex-shrink-0" />
                     <span className="text-gray-600 text-sm">{feature}</span>
                   </li>
                 ))}
               </motion.ul>
-
               <motion.div variants={fadeInUp}>
-                <a 
-                  href="mailto:info@enhancements.eu?subject=Richiesta%20informazioni%20Ingrid%20Cosmetics"
+                <a
+                  href={mailto(t('brandsPage.kbeauty.mailSubject'))}
                   className="btn-primary inline-flex items-center gap-2"
-                  data-testid="ingrid-contact-link"
+                  data-testid="kbeauty-contact-link"
                 >
-                  {language === 'it' ? 'Contattaci' : 'Contact Us'} <ArrowRight size={16} />
+                  {t('brandsPage.kbeauty.cta')} <ArrowRight size={16} />
                 </a>
               </motion.div>
             </motion.div>
@@ -319,9 +289,9 @@ export default function BrandsPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <img 
-                src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/0ad4ayzh_3266_5902026632621-5902026632638-5902026632652-5902026632645-5902026661584-1.jpg"
-                alt="Ingrid Cosmetics"
+              <img
+                src="/images/kbeauty/skin1004.jpg"
+                alt="Skin1004 Madagascar Centella Ampoule - K-Beauty"
                 className="img-zoom w-full h-full object-cover"
               />
             </motion.div>
@@ -329,78 +299,43 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      {/* Ingrid Gallery Section */}
-      <section className="py-16 bg-[#F9F9F9]" data-testid="ingrid-gallery">
+      {/* K-Beauty Brands Grid */}
+      <section className="py-16 bg-[#F9F9F9]" data-testid="kbeauty-brands">
         <div className="container-luxury">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            <motion.div 
-              className="grid grid-cols-1 md:grid-cols-3 gap-4"
-              variants={fadeInUp}
-            >
-              <div className="img-zoom-container aspect-square overflow-hidden">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/251saidg_3402_mineral-silk-lifestyle-2.jpg"
-                  alt="Ingrid Mineral Silk Foundation"
-                  className="img-zoom w-full h-full object-cover"
-                />
-              </div>
-              <div className="img-zoom-container aspect-square overflow-hidden">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/kguw9536_3368_5902026663458-lel-fixation-2.jpg"
-                  alt="Ingrid Eyebrow Fixation"
-                  className="img-zoom w-full h-full object-cover"
-                />
-              </div>
-              <div className="img-zoom-container aspect-square overflow-hidden">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_luxury-cosmetics-hub/artifacts/0ad4ayzh_3266_5902026632621-5902026632638-5902026632652-5902026632645-5902026661584-1.jpg"
-                  alt="Ingrid Ideal Matt Foundation"
-                  className="img-zoom w-full h-full object-cover"
-                />
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Ingrid Certifications Section */}
-      <section className="py-16 bg-[#0A0A0A] text-white" data-testid="ingrid-certifications">
-        <div className="container-luxury">
-          <motion.div
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-          >
-            <motion.div variants={fadeInUp} className="flex flex-col items-center">
-              <div className="w-16 h-16 border border-gold rounded-full flex items-center justify-center mb-4">
-                <Check size={28} className="text-gold" />
-              </div>
-              <p className="text-sm font-semibold">Cruelty Free</p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="flex flex-col items-center">
-              <div className="w-16 h-16 border border-gold rounded-full flex items-center justify-center mb-4">
-                <Check size={28} className="text-gold" />
-              </div>
-              <p className="text-sm font-semibold">{language === 'it' ? 'Certificato ISO' : 'ISO Certified'}</p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="flex flex-col items-center">
-              <div className="w-16 h-16 border border-gold rounded-full flex items-center justify-center mb-4">
-                <Check size={28} className="text-gold" />
-              </div>
-              <p className="text-sm font-semibold">Made in EU</p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="flex flex-col items-center">
-              <div className="w-16 h-16 border border-gold rounded-full flex items-center justify-center mb-4">
-                <Check size={28} className="text-gold" />
-              </div>
-              <p className="text-sm font-semibold">{language === 'it' ? 'Laboratorio Proprio' : 'Own Laboratory'}</p>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
+            <motion.h3 className="font-heading text-2xl mb-3 text-center" variants={fadeInUp}>
+              {t('brandsPage.kbeauty.brandsTitle')}
+            </motion.h3>
+            <motion.p className="text-gray-600 text-center max-w-2xl mx-auto mb-10" variants={fadeInUp}>
+              {t('brandsPage.kbeauty.brandsSubtitle')}
+            </motion.p>
+            <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" variants={fadeInUp}>
+              {t('brandsPage.kbeauty.brands').map((brand) => (
+                <a
+                  key={brand.name}
+                  href={mailto(`${t('brandsPage.kbeauty.mailSubject')} - ${brand.name}`)}
+                  className="group bg-white border border-transparent hover:border-[#C5A059] hover:shadow-md transition-[box-shadow,border-color] duration-300"
+                  data-testid={`kbeauty-brand-${brand.name.toLowerCase().replace(/\s+/g, '-')}`}
+                >
+                  <div className="img-zoom-container aspect-square overflow-hidden bg-[#F4F4F4]">
+                    <img
+                      src={`/images/kbeauty/${KBEAUTY_PRODUCTS[brand.name].img}`}
+                      alt={`${brand.name} - ${KBEAUTY_PRODUCTS[brand.name].product}`}
+                      className="img-zoom w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                  <p className="font-heading text-xl mb-1">{brand.name}</p>
+                  <p className="text-xs uppercase tracking-wider text-gray-500 mb-3">{KBEAUTY_PRODUCTS[brand.name].product}</p>
+                  <p className="text-sm text-gray-600 mb-4">{brand.description}</p>
+                  <span className="text-xs uppercase tracking-wider text-gold inline-flex items-center gap-2">
+                    {t('brandsPage.kbeauty.requestInfo')}
+                    <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
+                  </div>
+                </a>
+              ))}
             </motion.div>
           </motion.div>
         </div>

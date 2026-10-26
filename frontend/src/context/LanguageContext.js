@@ -31,9 +31,9 @@ const translations = {
         name: 'Trind Cosmetics',
         description: 'Leader mondiale nella cura delle unghie naturali con prodotti innovativi e risultati visibili.'
       },
-      ingrid: {
-        name: 'Ingrid Cosmetics',
-        description: 'Brand polacco di makeup professionale con una gamma completa per ogni esigenza.'
+      kbeauty: {
+        name: 'K-Beauty',
+        description: 'Distributori dei migliori brand di cosmetica coreana: Anua, Beauty of Joseon, COSRX, Innisfree e molti altri.'
       },
       cta: 'Scopri di più'
     },
@@ -102,13 +102,27 @@ const translations = {
         features: ['Nail Care - Trattamenti rinforzanti', 'Cuticle Care - Cura delle cuticole', 'Nail Finishers - Base e top coat', 'Nail Polish - Smalti professionali', 'Hand Care - Cura delle mani', 'Manicure Tools - Strumenti professionali'],
         products: ['Nail Repair Natural', 'Nail Balsam', 'Keratin Nail Restorer', 'Keratin Nail Protector', 'Cuticle Balsam', 'Hand Repair']
       },
-      ingrid: {
-        title: 'Ingrid Cosmetics',
-        subtitle: 'Professional Makeup',
-        description: 'INGRID COSMETICS è un brand polacco di makeup professionale con oltre 30 anni di esperienza nel settore cosmetico. Prodotti di altissima qualità, certificati ISO, cruelty-free e Made in EU. Un marchio apprezzato dalle donne di tutto il mondo.',
-        longDescription: 'Con un proprio laboratorio di ricerca e sviluppo, INGRID COSMETICS crea formule innovative per viso, occhi e labbra. Tutti i prodotti sono testati dermatologicamente e garantiscono performance professionali a prezzi accessibili.',
-        features: ['Face Makeup - Fondotinta, correttori, ciprie', 'Eye Makeup - Ombretti, mascara, eyeliner', 'Lip Products - Rossetti, gloss, matite labbra', 'Nail Polish - Smalti e trattamenti', 'Skincare - Cura della pelle', 'Accessories - Pennelli e strumenti'],
-        certifications: ['Cruelty Free', 'Certificato ISO', 'Made in EU', 'Laboratorio proprio']
+      kbeauty: {
+        title: 'Cosmetica Coreana',
+        subtitle: 'K-Beauty Distribution',
+        description: 'Enhancements srl è distributore dei prodotti di cosmetica coreana più amati al mondo. La K-Beauty è sinonimo di innovazione, ingredienti di alta qualità e routine di skincare efficaci, oggi richiestissime anche dal mercato italiano.',
+        longDescription: 'Selezioniamo i brand coreani più famosi e affidabili per farmacie, profumerie, centri estetici e rivenditori. Contattaci via email per ricevere listini, disponibilità e condizioni commerciali dedicate.',
+        features: ['Detergenti e struccanti', 'Tonici ed essenze', 'Sieri e ampolle', 'Creme idratanti', 'Protezione solare', 'Maschere viso'],
+        cta: 'Richiedi informazioni',
+        mailSubject: 'Richiesta informazioni prodotti coreani',
+        requestInfo: 'Richiedi via email',
+        brandsTitle: 'I Brand Coreani che Distribuiamo',
+        brandsSubtitle: 'Clicca su un brand per scriverci direttamente e ricevere listino e disponibilità.',
+        brands: [
+          { name: 'Anua', description: 'Tonici e sieri lenitivi, famosi per la linea Heartleaf.' },
+          { name: 'Beauty of Joseon', description: 'Skincare ispirata alla medicina tradizionale coreana, celebre per le protezioni solari.' },
+          { name: 'COSRX', description: 'Formule semplici ed efficaci, iconica la Snail Mucin Essence.' },
+          { name: 'Innisfree', description: 'Ingredienti naturali dell\'isola di Jeju per una pelle sana.' },
+          { name: 'Missha', description: 'Brand storico della K-Beauty, noto per BB cream ed essenze.' },
+          { name: 'Some By Mi', description: 'Trattamenti mirati per pelli impure e sensibili.' },
+          { name: 'Skin1004', description: 'Linea Madagascar Centella per pelli delicate.' },
+          { name: 'Round Lab', description: 'Skincare delicata a base di acqua marina di Dokdo.' }
+        ]
       }
     },
     // Services Page
@@ -206,9 +220,9 @@ const translations = {
         name: 'Trind Cosmetics',
         description: 'World leader in natural nail care with innovative products and visible results.'
       },
-      ingrid: {
-        name: 'Ingrid Cosmetics',
-        description: 'Polish professional makeup brand with a complete range for every need.'
+      kbeauty: {
+        name: 'K-Beauty',
+        description: 'Distributors of the best Korean cosmetics brands: Anua, Beauty of Joseon, COSRX, Innisfree and many more.'
       },
       cta: 'Learn more'
     },
@@ -277,13 +291,27 @@ const translations = {
         features: ['Nail Care - Strengthening treatments', 'Cuticle Care - Cuticle treatments', 'Nail Finishers - Base and top coats', 'Nail Polish - Professional colors', 'Hand Care - Hand treatments', 'Manicure Tools - Professional tools'],
         products: ['Nail Repair Natural', 'Nail Balsam', 'Keratin Nail Restorer', 'Keratin Nail Protector', 'Cuticle Balsam', 'Hand Repair']
       },
-      ingrid: {
-        title: 'Ingrid Cosmetics',
-        subtitle: 'Professional Makeup',
-        description: 'INGRID COSMETICS is a Polish professional makeup brand with over 30 years of experience in the cosmetic industry. Highest quality products, ISO certified, cruelty-free and Made in EU. A brand appreciated by women all over the world.',
-        longDescription: 'With its own research and development laboratory, INGRID COSMETICS creates innovative formulas for face, eyes and lips. All products are dermatologically tested and guarantee professional performance at accessible prices.',
-        features: ['Face Makeup - Foundations, concealers, powders', 'Eye Makeup - Eyeshadows, mascaras, eyeliners', 'Lip Products - Lipsticks, glosses, lip pencils', 'Nail Polish - Polishes and treatments', 'Skincare - Skin care', 'Accessories - Brushes and tools'],
-        certifications: ['Cruelty Free', 'ISO Certified', 'Made in EU', 'Own Laboratory']
+      kbeauty: {
+        title: 'Korean Cosmetics',
+        subtitle: 'K-Beauty Distribution',
+        description: 'Enhancements srl distributes the most loved Korean cosmetics in the world. K-Beauty stands for innovation, high-quality ingredients and effective skincare routines, now in high demand on the Italian market too.',
+        longDescription: 'We select the most famous and reliable Korean brands for pharmacies, perfumeries, beauty centers and retailers. Email us to receive price lists, availability and dedicated trade terms.',
+        features: ['Cleansers and makeup removers', 'Toners and essences', 'Serums and ampoules', 'Moisturizing creams', 'Sun protection', 'Face masks'],
+        cta: 'Request information',
+        mailSubject: 'Korean products information request',
+        requestInfo: 'Request via email',
+        brandsTitle: 'Korean Brands We Distribute',
+        brandsSubtitle: 'Click on a brand to email us directly and receive price list and availability.',
+        brands: [
+          { name: 'Anua', description: 'Soothing toners and serums, famous for the Heartleaf line.' },
+          { name: 'Beauty of Joseon', description: 'Skincare inspired by traditional Korean medicine, renowned for its sunscreens.' },
+          { name: 'COSRX', description: 'Simple and effective formulas, iconic Snail Mucin Essence.' },
+          { name: 'Innisfree', description: 'Natural ingredients from Jeju Island for healthy skin.' },
+          { name: 'Missha', description: 'A historic K-Beauty brand, known for BB creams and essences.' },
+          { name: 'Some By Mi', description: 'Targeted treatments for blemish-prone and sensitive skin.' },
+          { name: 'Skin1004', description: 'Madagascar Centella line for delicate skin.' },
+          { name: 'Round Lab', description: 'Gentle skincare based on Dokdo deep sea water.' }
+        ]
       }
     },
     // Services Page

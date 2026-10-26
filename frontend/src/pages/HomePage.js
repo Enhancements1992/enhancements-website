@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { useSeo } from '../hooks/useSeo';
 import { ArrowRight, Truck, Users, HeadphonesIcon, Package, BookOpen, Megaphone } from 'lucide-react';
 
 // Animation variants
@@ -22,6 +23,7 @@ const staggerContainer = {
 const serviceIcons = [Truck, Users, HeadphonesIcon, Package, BookOpen, Megaphone];
 
 export default function HomePage() {
+  useSeo('home', '/');
   const { t } = useLanguage();
 
   return (
@@ -205,7 +207,7 @@ export default function HomePage() {
                 {t('brands.kbeauty.description')}
               </p>
               <Link 
-                to="/brands" 
+                to="/cosmetici-coreani" 
                 className="btn-secondary !border-white !text-white hover:!bg-white hover:!text-black text-xs"
                 data-testid="brand-kbeauty-cta"
               >

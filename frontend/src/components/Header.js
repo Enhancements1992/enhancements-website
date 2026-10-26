@@ -26,6 +26,7 @@ export const Header = () => {
     { path: '/', label: t('nav.home') },
     { path: '/about', label: t('nav.about') },
     { path: '/brands', label: t('nav.brands') },
+    { path: '/cosmetici-coreani', label: t('nav.kbeauty') },
     { path: '/services', label: t('nav.services') },
     { path: '/contact', label: t('nav.contact') }
   ];

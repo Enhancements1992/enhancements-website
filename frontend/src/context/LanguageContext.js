@@ -7,6 +7,7 @@ const translations = {
       home: 'Home',
       about: 'Chi Siamo',
       brands: 'Brand',
+      kbeauty: 'K-Beauty',
       services: 'Servizi',
       contact: 'Contatti'
     },
@@ -26,7 +27,7 @@ const translations = {
     // Brands
     brands: {
       label: 'I Nostri Brand',
-      title: 'Distribuzione Esclusiva',
+      title: 'Distribuzione B2B',
       trind: {
         name: 'Trind Cosmetics',
         description: 'Leader mondiale nella cura delle unghie naturali con prodotti innovativi e risultati visibili.'
@@ -93,7 +94,7 @@ const translations = {
     // Brands Page
     brandsPage: {
       heroTitle: 'I Nostri Brand',
-      heroSubtitle: 'Distribuzione esclusiva dei migliori marchi di cosmetica.',
+      heroSubtitle: 'Distribuzione B2B dei migliori marchi di cosmetica per farmacie e profumerie.',
       trind: {
         title: 'Trind Cosmetics',
         subtitle: 'Care for Natural Nails',
@@ -196,6 +197,7 @@ const translations = {
       home: 'Home',
       about: 'About Us',
       brands: 'Brands',
+      kbeauty: 'K-Beauty',
       services: 'Services',
       contact: 'Contact'
     },
@@ -215,7 +217,7 @@ const translations = {
     // Brands
     brands: {
       label: 'Our Brands',
-      title: 'Exclusive Distribution',
+      title: 'B2B Distribution',
       trind: {
         name: 'Trind Cosmetics',
         description: 'World leader in natural nail care with innovative products and visible results.'
@@ -282,7 +284,7 @@ const translations = {
     // Brands Page
     brandsPage: {
       heroTitle: 'Our Brands',
-      heroSubtitle: 'Exclusive distribution of the best cosmetic brands.',
+      heroSubtitle: 'B2B distribution of the best cosmetic brands for pharmacies and perfumeries.',
       trind: {
         title: 'Trind Cosmetics',
         subtitle: 'Care for Natural Nails',

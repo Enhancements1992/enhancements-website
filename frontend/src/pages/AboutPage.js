@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { useSeo } from '../hooks/useSeo';
 import { Check } from 'lucide-react';
 
 const fadeInUp = {
@@ -18,6 +19,7 @@ const staggerContainer = {
 };
 
 export default function AboutPage() {
+  useSeo('about', '/about');
   const { t } = useLanguage();
 
   return (

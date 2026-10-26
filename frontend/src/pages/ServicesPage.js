@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { useSeo } from '../hooks/useSeo';
 import { Truck, Users, HeadphonesIcon, Package, BookOpen, Megaphone } from 'lucide-react';
 
 const fadeInUp = {
@@ -27,6 +28,7 @@ const services = [
 ];
 
 export default function ServicesPage() {
+  useSeo('services', '/services');
   const { t } = useLanguage();
 
   return (

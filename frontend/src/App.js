@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import BrandsPage from "./pages/BrandsPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
+import KBeautyPage from "./pages/KBeautyPage";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/brands" element={<BrandsPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/cosmetici-coreani" element={<KBeautyPage />} />
           </Routes>
           <Footer />
         </BrowserRouter>

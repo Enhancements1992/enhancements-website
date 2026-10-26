@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { useSeo } from '../hooks/useSeo';
 import { MapPin, Phone, Clock, Mail, ExternalLink, CheckCircle, AlertCircle } from 'lucide-react';
 
 const fadeInUp = {
@@ -17,6 +18,7 @@ const staggerContainer = {
 };
 
 export default function ContactPage() {
+  useSeo('contact', '/contact');
   const { t, language } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',

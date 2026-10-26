@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
+import { useSeo } from '../hooks/useSeo';
 import { Check, ArrowRight } from 'lucide-react';
 
 const fadeInUp = {
@@ -31,6 +32,7 @@ const KBEAUTY_PRODUCTS = {
 const mailto = (subject) => `mailto:info@enhancements.eu?subject=${encodeURIComponent(subject)}`;
 
 export default function BrandsPage() {
+  useSeo('brands', '/brands');
   const { t, language } = useLanguage();
 
   return (
@@ -271,7 +273,7 @@ export default function BrandsPage() {
                   </li>
                 ))}
               </motion.ul>
-              <motion.div variants={fadeInUp}>
+              <motion.div className="flex flex-wrap gap-4" variants={fadeInUp}>
                 <a
                   href={mailto(t('brandsPage.kbeauty.mailSubject'))}
                   className="btn-primary inline-flex items-center gap-2"
@@ -279,6 +281,9 @@ export default function BrandsPage() {
                 >
                   {t('brandsPage.kbeauty.cta')} <ArrowRight size={16} />
                 </a>
+                <Link to="/cosmetici-coreani" className="btn-secondary inline-flex items-center gap-2" data-testid="kbeauty-page-link">
+                  {t('brands.cta')} <ArrowRight size={16} />
+                </Link>
               </motion.div>
             </motion.div>
 

@@ -71,3 +71,8 @@ Create a modern, professional, and conversion-focused corporate website for an I
 3. Add more product images and details
 4. Implement Google Analytics
 5. Add cookie consent banner for GDPR
+
+## 2026-06 Update
+- Ingrid Cosmetics replaced by K-Beauty (Korean cosmetics) section: Anua, Beauty of Joseon, COSRX, Innisfree, Missha, Some By Mi, Skin1004, Round Lab with official product photos (/frontend/public/images/kbeauty), mailto info@enhancements.eu per brand.
+- Home brand card + SEO meta updated; fixed white text on home brand card buttons.
+- Deploy: push to GitHub main -> Vercel auto-deploy.

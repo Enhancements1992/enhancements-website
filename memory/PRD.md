@@ -76,3 +76,4 @@ Create a modern, professional, and conversion-focused corporate website for an I
 - Ingrid Cosmetics replaced by K-Beauty (Korean cosmetics) section: Anua, Beauty of Joseon, COSRX, Innisfree, Missha, Some By Mi, Skin1004, Round Lab with official product photos (/frontend/public/images/kbeauty), mailto info@enhancements.eu per brand.
 - Home brand card + SEO meta updated; fixed white text on home brand card buttons.
 - Deploy: push to GitHub main -> Vercel auto-deploy.
+- SEO B2B: new page /cosmetici-coreani (KBeautyPage.js + content/kbeautyContent.js), per-page title/description/canonical via hooks/useSeo.js, FAQPage/Service/Breadcrumb JSON-LD, WholesaleStore JSON-LD in index.html, sitemap.xml + robots.txt, K-Beauty nav link. Wording: "Distributore B2B" (not official/exclusive).

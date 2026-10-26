@@ -57,7 +57,7 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-8 whitespace-nowrap" data-testid="desktop-nav">
+          <nav className="hidden xl:flex items-center gap-8 whitespace-nowrap" data-testid="desktop-nav">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -71,7 +71,7 @@ export const Header = () => {
           </nav>
 
           {/* Right side: Language + CTA */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden xl:flex items-center gap-6">
             {/* Language Switcher */}
             <div className="lang-switch" data-testid="language-switcher">
               <button
@@ -104,7 +104,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2"
+            className="xl:hidden p-2"
             data-testid="mobile-menu-toggle"
             aria-label="Toggle menu"
           >
